@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9a8919d7.css",
+    "main.js": "/static/js/main.656a340c.js",
+    "static/js/787.7eda0f74.chunk.js": "/static/js/787.7eda0f74.chunk.js",
+    "static/media/Perro.png": "/static/media/Perro.890e1d81d6b183925ebf.png",
+    "static/media/Logo.svg": "/static/media/Logo.41a0cd34ec29892d7e3b005436efc588.svg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.9a8919d7.css.map": "/static/css/main.9a8919d7.css.map",
+    "main.656a340c.js.map": "/static/js/main.656a340c.js.map",
+    "787.7eda0f74.chunk.js.map": "/static/js/787.7eda0f74.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a8919d7.css",
+    "static/js/main.656a340c.js"
+  ]
+}
