@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <div className=" overflow-hidden flex justify-center bg-pinkwhite w-full h-[330px] sm:h-[360px-50px] md:h-[360px] lg:h-[798px] border-b border-b-magenta border-b-[2.35px] lg:border-b-[6px]">
       <div className="w-full md:w-[1200px] space-x-[20px] flex justify-between relative items-center mx-[20px] md:mx-[30px]">
-        <div className="z-20  flex flex-col w-[230px] sm:w-[300px] md:w-[420px] lg:w-[553px]  text-blackish space-y-[14px] md:space-y-[15px]  lg:space-y-[35px]  items-start">
+        <div className="z-20  flex flex-col w-[220px] sm:w-[300px] md:w-[420px] lg:w-[553px]  text-blackish space-y-[14px] md:space-y-[15px]  lg:space-y-[35px]  items-start">
           <span className="flex items-center semi text-magenta text-[13px] sm:text-[14px] lg:text-[20px] ">
             <MdLocationOn /> José Ellauri 1328
           </span>
@@ -27,7 +27,7 @@ export default function Hero() {
             felicidad de su mascota.
           </h1>
           {!full ? (
-            <p className=" text-left text-[13px] sm:text-[14px]">
+            <p className=" text-left text-[13px] sm:text-[14px] ">
               En Clínica Veterinaria Ellauri estamos dedicados al cuidado de la
               salud y bienestar de animales domésticos.{" "}
             </p>
@@ -48,7 +48,7 @@ export default function Hero() {
           <img
             src={Perro}
             alt=""
-            className={`overflow-visible z-10 absolute md:top-[-30px]  object-cover h-[310px] sm:h-[440px] md:h-[660px] lg:h-[950px]`}
+            className={`overflow-visible z-10 absolute md:top-[-30px]  object-cover h-[360px] sm:h-[440px] md:h-[660px] lg:h-[950px]`}
           />
 
           <div

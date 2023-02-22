@@ -1,7 +1,7 @@
 import React from "react";
 export default function Card({ logo, titulo, image, text }) {
   return (
-    <div className="border border-magenta text-white rounded-[5.67px]  py-[17px]  lg:py-[30px]   min-w-[150.68px] min-h-[211.61px] lg:h-[373px] flex flex-col justify-between">
+    <div className="border border-magenta text-white rounded-[5.67px]  py-[17px]  lg:py-[27px]   min-w-[150.68px] min-h-[211.61px] lg:h-[373px] flex flex-col justify-between">
       <div className="flex space-x-[21.27px]  items-center justify-center">
         <div className="bg-magenta rounded-full p-[5px] lg:p-[10px] lg:text-[28.32px] ">
           {logo}
@@ -9,11 +9,11 @@ export default function Card({ logo, titulo, image, text }) {
         <h4 className="font-serif text-[14px] lg:text-[25px]">{titulo}</h4>
         <div></div>
       </div>
-      <div className="h-[141px] lg:h-[240px]">
+      <div className="h-[141px] lg:h-[250px]">
         <div className="bg-pinkwhite w-full  h-[87px]  lg:h-[155px] flex items-center justify-center">
           <img src={image} alt="" className="h-full" />
         </div>
-        <p className="text-[10px] text-left mx-[10px] mt-[8.51px] lg:mx-[30px] lg:mt-[15px] lg:text-[14px]">
+        <p className="text-[10px] text-left mx-[10px] mt-[8.51px] lg:mx-[24px] lg:mt-[20px] lg:text-[13px]">
           {text}
         </p>
       </div>
