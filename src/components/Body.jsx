@@ -83,8 +83,8 @@ export default function Body() {
             </p>
           }
         />
-        <hr className="text-magenta" />
-        <Section
+        {/* <hr className="text-magenta" /> */}
+        {/* <Section
           title={`Nuestra Clínica`}
           image={Van}
           paragraph={
@@ -103,7 +103,7 @@ export default function Body() {
               más sobre nuestro local.
             </p>
           }
-        />
+        /> */}
         <hr className="text-magenta" />
         <Bubble
           title={`Traslados`}
@@ -119,7 +119,7 @@ export default function Body() {
           }
         />
         <hr className="text-magenta" />
-        <Section
+        {/* <Section
           title={`Nuestra Ubicación`}
           image={Van}
           paragraph={
@@ -132,7 +132,7 @@ export default function Body() {
               <span className="font-semibold"> nuestros pacientes</span>.
             </p>
           }
-        />
+        /> */}
       </div>
     </div>
   );
