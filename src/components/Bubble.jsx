@@ -5,11 +5,11 @@ import Buttonize from "./Buttonize";
 export default function Bubble({ title, image, paragraph }) {
   return (
     <div className="bg-whiteish rounded-md text-blackish p-[20px] lg:h-[464px]  flex flex-col sm:flex-row sm:items-center lg:rounded-[20px]  ">
-      <div className=" flex justify-center sm:justify-start h-[250px] lg:h-[464px] lg:translate-y-[-70px] lg:translate-x-[-50px]">
+      <div className=" flex justify-center sm:justify-start sm:w-[1050px] h-[250px] lg:h-[464px] lg:translate-y-[-70px]  lg:translate-x-[-50px]">
         <img
           src={image}
           alt=""
-          className=" overflow-visible translate-y-[-90px] border-b sm:border-none border-inactive h-[300px] lg:h-[624px] lg:w-[624px] lg:w-full object-cover object-center "
+          className=" overflow-visible translate-y-[-90px] border-b sm:border-none border-inactive h-[300px] sm:h-[360px] sm:w-[360px] lg:h-[624px] lg:w-[624px] lg:w-full object-cover object-center "
         />
       </div>
       <div className="space-y-[20px] lg:space-y-[28.84px] lg:w-[466px] lg:mr-[80px] ">
