@@ -18,9 +18,7 @@ export default function Bubble({ title, image, paragraph }) {
     <div
       className={`bg-whiteish mx-auto  rounded-md text-blackish flex flex-col items-center p-[20px] p-[20px] ${
         full && "px-[100px]"
-      } sm:flex-row items-center ${
-        full && "px-[123px]"
-      } lg:rounded-2xl sm:h-[323px] lg:h-[464px]  space-y-[20px] lg:space-y-[28.84px]`}
+      } sm:flex-row items-center lg:rounded-2xl sm:h-[323px] lg:h-[464px]  space-y-[20px] lg:space-y-[28.84px]`}
     >
       <div className="  flex  justify-center h-[250px] w-full lg:h-[464px]  sm:flex-1 sm:border-none   border-b border-inactive">
         <img
@@ -35,7 +33,7 @@ export default function Bubble({ title, image, paragraph }) {
         <h2 className="font-serif text-[30px] text-left lg:text-[46px]">
           {title}
         </h2>
-        <p className="text-[13px] text-left md:text-[15px] lg:text-[18px]">
+        <p className="text-[13px] text-left md:text-[14px] lg:text-[18px]">
           {paragraph}
         </p>
         <div className="flex justify-between lg:w-[410px] pb-[20px]">

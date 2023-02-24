@@ -35,16 +35,18 @@ export default function Section({ title, image, paragraph }) {
     </div>
   ) : (
     <div className=" text-whiteish pl-[20px] flex justify-between space-x-[40px] lg:space-x-[137px] lg:text-[18px]">
-      <div className="space-y-[20px] flex flex-col justify-between flex-1  max-w-[417.32px]">
+      <div className="space-y-[20px] sm:space-y-[40px] flex flex-col justify-between flex-1  min-w-[265.32px] max-w-[417.32px]">
         <h2 className="font-serif text-[30px] text-left lg:text-[46px]">
           {title}
         </h2>
-        <div className="text-[13px] md:text-[18px]">{paragraph}</div>
+        <div className="text-[13px] md:text-[15px] lg:text-[18px]">
+          {paragraph}
+        </div>
         <div className="flex justify-between">
           <Buttonize button={"instagram"} fill={true} text={`white`} />
         </div>
       </div>
-      <div className="flex-1 bg-whiteish rounded-xl h-[415px] overflow-hidden flex item-center justify-center">
+      <div className="flex-1 bg-whiteish rounded-xl lg:h-[415px] overflow-hidden flex item-center justify-center">
         <img src={Demo} alt="" className=" object-cover w-full h-full" />
       </div>
     </div>
