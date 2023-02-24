@@ -83,43 +83,49 @@ export default function Body() {
             </p>
           }
         />
-        {/* <hr className="text-magenta" /> */}
-        {/* <Section
+        <hr className="text-magenta" />
+        <Section
           title={`Nuestra Clínica`}
           image={Van}
           paragraph={
-            <p className="text-left">
-              <span className="font-semibold">
-                {" "}
-                Clínica Veterinaria Ellauri{" "}
-              </span>{" "}
-              es un lugar acogedor y moderno, diseñado para brindar la mejor
-              atención a sus pacientes y sus dueños. <br />
-              <br />
-              Contamos con un equipo de veterinarios altamente capacitados y
-              comprometidos a brindar atención personalizada y un servicio
-              excepcional. <br />
-              <br /> Te invitamos a ver nuestras fotos en Instagram para conocer
-              más sobre nuestro local.
-            </p>
+            <div className="flex flex-col sm:flex-row text-[13px] md:text-[15px] lg:text-[17px] text-left space-y-[20px] sm:space-y-[0px] sm:space-x-[20px]">
+              <p className="flex-1">
+                <span className="font-semibold">
+                  Clínica Veterinaria Ellauri
+                </span>{" "}
+                es un lugar acogedor y moderno, diseñado para brindar la mejor
+                atención a sus pacientes y sus dueños.
+              </p>
+              <p className="flex-1">
+                Contamos con un equipo de veterinarios altamente capacitados y
+                comprometidos a brindar atención personalizada y un servicio
+                excepcional.
+              </p>
+              <p className="flex-1">
+                Te invitamos a ver nuestras fotos en Instagram para conocer más
+                sobre nuestro local.
+              </p>
+            </div>
           }
-        /> */}
+        />
         <hr className="text-magenta" />
         <Bubble
           title={`Traslados`}
           image={Van}
           paragraph={
-            <p className="text-left">
-              Clínica Veterinaria Ellauri también ofrece servicios de traslado
-              para sus pacientes. Nos aseguramos de proporcionar un ambiente
-              cómodo y seguro para su mascota. <br /> <br /> ¡No dude en
-              contactarnos para más información sobre nuestros servicios de
-              traslado!
-            </p>
+            <div>
+              <p className="text-left">
+                Clínica Veterinaria Ellauri también ofrece servicios de traslado
+                para sus pacientes. Nos aseguramos de proporcionar un ambiente
+                cómodo y seguro para su mascota. <br /> <br /> ¡No dude en
+                contactarnos para más información sobre nuestros servicios de
+                traslado!
+              </p>
+            </div>
           }
         />
         <hr className="text-magenta" />
-        {/* <Section
+        <Section
           title={`Nuestra Ubicación`}
           image={Van}
           paragraph={
@@ -132,7 +138,7 @@ export default function Body() {
               <span className="font-semibold"> nuestros pacientes</span>.
             </p>
           }
-        /> */}
+        />
       </div>
     </div>
   );

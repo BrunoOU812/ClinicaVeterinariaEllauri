@@ -22,9 +22,9 @@ export default function Header() {
           full && `px-0`
         }  flex items-center  justify-between `}
       >
-        <div className="flex items-center space-x-[4px] lg:space-x-[12px] cursor-pointer">
-          <img src={Logo} alt="" className="h-[22px] lg:h-[40.85px]" />
-          <div className=" text-[13px] lg:text-[22px]">
+        <div className="flex items-center space-x-[7px] lg:space-x-[18px] cursor-pointer">
+          <img src={Logo} alt="" className="h-[30px] lg:h-[60.85px]" />
+          <div className="font-serif text-[13px] lg:text-[22px]">
             Clinica Veterinaria Ellauri
           </div>
         </div>
