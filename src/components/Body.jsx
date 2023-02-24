@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card";
 import Bubble from "./Bubble";
 import Section from "./Section";
+import Gallery from "./Gallery";
 import { FaPlusCircle, FaBriefcaseMedical, FaBone } from "react-icons/fa";
 import { MdOutlinePets } from "react-icons/md";
 import Veterinarian from "../images/Veterinarian.png";
@@ -24,11 +25,11 @@ export default function Body() {
     return () => mediaQuery.removeListener(listener);
   }, []);
   return (
-    <div className="bg-blackish lg:flex lg:items-center lg:justify-center">
-      <div className=" p-[20px] py-[40px] space-y-[40px] lg:space-y-[81px] lg:w-[1240px]">
+    <div className="bg-blackish lg:flex lg:items-center lg:justify-center ">
+      <div className=" p-[20px] py-[40px] lg:py-[81px] space-y-[40px] lg:space-y-[81px] lg:w-[1240px]">
         <div className="grid grid-cols-2  sm:grid-cols-4 gap-[20px]  ">
           <Card
-            titulo="Medicinas"
+            titulo="Medicina"
             logo={<FaPlusCircle />}
             image={Medicine}
             text={
@@ -77,35 +78,32 @@ export default function Body() {
               En nuestra sección de Consultas, puede programar una cita a travéz
               de <span className="font-semibold"> whatsapp </span> con una de
               nuestras veterinarias para recibir atención inmediata. <br />{" "}
-              <br /> Nuestro horario de atención es de lunes a viernes
+              <br className="h-[210px]" /> Nuestro horario de atención es de
+              lunes a viernes
               <span className="font-semibold"> 9:30 a 19:00 hs </span> y sábados
               de 9:30 a 12:00 hs.
             </p>
           }
         />
         <hr className="text-magenta" />
-        <Section
+        <Gallery
           title={`Nuestra Clínica`}
           image={Van}
           paragraph={
-            <div className="flex flex-col sm:flex-row text-[13px] md:text-[15px] lg:text-[17px] text-left space-y-[20px] sm:space-y-[0px] sm:space-x-[20px]">
-              <p className="flex-1">
-                <span className="font-semibold">
-                  Clínica Veterinaria Ellauri
-                </span>{" "}
-                es un lugar acogedor y moderno, diseñado para brindar la mejor
-                atención a sus pacientes y sus dueños.
-              </p>
-              <p className="flex-1">
-                Contamos con un equipo de veterinarios altamente capacitados y
-                comprometidos a brindar atención personalizada y un servicio
-                excepcional.
-              </p>
-              <p className="flex-1">
-                Te invitamos a ver nuestras fotos en Instagram para conocer más
-                sobre nuestro local.
-              </p>
-            </div>
+            <p className=" text-[13px] md:text-[15px] lg:text-[18px] text-left sm:columns-2 lg:columns-3 gap-[20px] space-y-[2rem] ">
+              <span className="font-semibold">
+                {" "}
+                Clínica Veterinaria Ellauri{" "}
+              </span>{" "}
+              es un lugar acogedor y moderno, diseñado para brindar la mejor
+              atención a sus pacientes y sus dueños.
+              <br />
+              Contamos con un equipo de veterinarios altamente capacitados y
+              comprometidos a brindar atención personalizada y un servicio
+              excepcional.
+              <br /> Te invitamos a ver nuestras fotos en Instagram para conocer
+              más sobre nuestro local.
+            </p>
           }
         />
         <hr className="text-magenta" />
@@ -129,7 +127,7 @@ export default function Body() {
           title={`Nuestra Ubicación`}
           image={Van}
           paragraph={
-            <p className="text-left">
+            <p className="text-left w-full">
               Se encuentra en el <span className="font-semibold"> mapa</span>, y
               puede ser fácilmente accesible desde cualquier parte de la ciudad.
               Además, tenemos un enlace a nuestro perfil de Instagram, donde
