@@ -137,6 +137,8 @@ export default function Body() {
             </p>
           }
         />
+        <hr className="text-magenta" />
+        <hr className="text-magenta" />
       </div>
     </div>
   );
