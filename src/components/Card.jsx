@@ -10,8 +10,12 @@ export default function Card({ logo, titulo, image, text }) {
         <div></div>
       </div>
       <div className="h-[141px] lg:h-[250px]">
-        <div className="bg-pinkwhite w-full  h-[87px]  lg:h-[155px] flex items-center justify-center">
-          <img src={image} alt="" className="h-full" />
+        <div className="w-full  h-[87px]  lg:h-[155px] flex items-center justify-center overflow-hidden ">
+          <img
+            src={image}
+            alt=""
+            className="w-full hover:scale-110 hover:ease-in-out duration-150"
+          />
         </div>
         <p className="text-[10px] text-left mx-[10px] mt-[8.51px] lg:mx-[24px] lg:mt-[20px] lg:text-[13px]">
           {text}

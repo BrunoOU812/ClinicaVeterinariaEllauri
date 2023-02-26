@@ -2,14 +2,16 @@ import React from "react";
 import Card from "./Card";
 import Bubble from "./Bubble";
 import Section from "./Section";
+import Outro from "./Outro";
 import Gallery from "./Gallery";
 import { FaPlusCircle, FaBriefcaseMedical, FaBone } from "react-icons/fa";
 import { MdOutlinePets } from "react-icons/md";
 import Veterinarian from "../images/Veterinarian.png";
-import Medicine from "../images/Medicine.png";
-import Food from "../images/Food.png";
-import Accesories from "../images/Accesories.png";
-import Toys from "../images/Toys.png";
+import ShinnyMedMagenta from "../images/ShinnyMedMagenta.png";
+import FoodMagenta from "../images/FoodMagenta.png";
+import ToysMagenta from "../images/ToysMagenta.png";
+import CatBagMagenta from "../images/CatBagMagenta.png";
+import BunnyDogCat from "../images/BunnyDogCat.png";
 import Van from "../images/Van.png";
 
 export default function Body() {
@@ -25,13 +27,13 @@ export default function Body() {
     return () => mediaQuery.removeListener(listener);
   }, []);
   return (
-    <div className="bg-blackish lg:flex lg:items-center lg:justify-center ">
-      <div className=" p-[20px] py-[40px] lg:py-[81px] space-y-[40px] lg:space-y-[81px] lg:w-[1240px]">
+    <div className="bg-blackish lg:flex lg:items-center lg:justify-center">
+      <div className=" p-[20px] pb-[0px] pt-[40px] lg:pt-[81px] space-y-[40px] lg:space-y-[81px] lg:w-[1240px]">
         <div className="grid grid-cols-2  sm:grid-cols-4 gap-[20px]  ">
           <Card
             titulo="Medicina"
             logo={<FaPlusCircle />}
-            image={Medicine}
+            image={ShinnyMedMagenta}
             text={
               full
                 ? `Una amplia gama de medicamentos y tratamientos para  una amplia variedad de afecciones de salud en su mascota.`
@@ -41,7 +43,7 @@ export default function Body() {
           <Card
             titulo="Juguetes"
             logo={<MdOutlinePets />}
-            image={Toys}
+            image={ToysMagenta}
             text={
               full
                 ? `Ofrecemos una amplia selección de juguetes divertidos y estimulantes para mantener a su mascota entretenida y activa.`
@@ -51,7 +53,7 @@ export default function Body() {
           <Card
             titulo="Accesorios"
             logo={<FaBriefcaseMedical />}
-            image={Accesories}
+            image={CatBagMagenta}
             text={
               full
                 ? `Variedad de accesorios , como correas, collar, arneses y mochilas para la comodidad y seguridad de su mascota.`
@@ -61,7 +63,7 @@ export default function Body() {
           <Card
             titulo="Comida  "
             logo={<FaBone />}
-            image={Food}
+            image={FoodMagenta}
             text={
               full
                 ? `Una amplia selección de comida de alta calidad para garantizar que su mascota reciba una nutrición adecuada y equilibrada.`
@@ -138,7 +140,17 @@ export default function Body() {
           }
         />
         <hr className="text-magenta" />
+        <Outro />
         <hr className="text-magenta" />
+        <div className="flex justify-center w-full ">
+          <div className=" flex items-end w-full lg:w-[1015px]">
+            <img
+              className="w-full mt-[-8.8%] ml-[-1.4%]  object-bottom"
+              src={BunnyDogCat}
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

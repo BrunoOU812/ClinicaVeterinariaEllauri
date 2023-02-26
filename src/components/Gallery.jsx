@@ -23,16 +23,28 @@ export default function Gallery({ title, image, paragraph }) {
       <div className="space-y-[20px]">
         <div className="w-full flex justify-between space-x-[20px]">
           <div className="flex-1 bg-whiteish rounded-xl  h-[250px] overflow-hidden flex item-center justify-center">
-            <img src={Demo} alt="" className=" object-cover w-full" />
+            <img
+              src={Demo}
+              alt=""
+              className=" object-cover w-full hover:scale-110 duration-150 ease-in-out"
+            />
           </div>
           {full && (
             <div className="flex-1 bg-whiteish rounded-xl  h-[250px] overflow-hidden flex item-center justify-center">
-              <img src={Demo} alt="" className=" object-cover w-full" />
+              <img
+                src={Demo}
+                alt=""
+                className=" object-cover w-full  hover:scale-110 duration-150 ease-in-out"
+              />
             </div>
           )}
           {full && (
             <div className="flex-1 bg-whiteish rounded-xl  h-[250px] overflow-hidden flex item-center justify-center">
-              <img src={Demo} alt="" className=" object-cover w-full" />
+              <img
+                src={Demo}
+                alt=""
+                className=" object-cover w-full  hover:scale-110 duration-150 ease-in-out"
+              />
             </div>
           )}
         </div>
