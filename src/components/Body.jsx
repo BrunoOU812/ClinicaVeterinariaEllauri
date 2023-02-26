@@ -27,7 +27,7 @@ export default function Body() {
     return () => mediaQuery.removeListener(listener);
   }, []);
   return (
-    <div className="bg-blackish lg:flex lg:items-center lg:justify-center">
+    <div className="bg-blackish lg:flex lg:items-center lg:justify-center w-full  overflow-hidden">
       <div className=" p-[20px] pb-[0px] pt-[40px] lg:pt-[81px] space-y-[40px] lg:space-y-[81px] lg:w-[1240px]">
         <div className="grid grid-cols-2  sm:grid-cols-4 gap-[20px]  ">
           <Card
