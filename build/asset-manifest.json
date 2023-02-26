@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.82082eb5.css",
-    "main.js": "/static/js/main.be810043.js",
+    "main.js": "/static/js/main.17be57b6.js",
     "static/js/787.7eda0f74.chunk.js": "/static/js/787.7eda0f74.chunk.js",
     "static/media/ToysMagenta.png": "/static/media/ToysMagenta.f4b2125364cf37e51c7d.png",
-    "static/media/FoodMagenta.png": "/static/media/FoodMagenta.41e9af118a9e0c55cbcf.png",
-    "static/media/CatBagMagenta.png": "/static/media/CatBagMagenta.d734eff7bab70d56f263.png",
-    "static/media/ShinnyMedMagenta.png": "/static/media/ShinnyMedMagenta.14857af644e54cf78cae.png",
     "static/media/Demo.png": "/static/media/Demo.db18f34abb51d65fbebd.png",
     "static/media/Veterinarian.png": "/static/media/Veterinarian.0dbc0fe35827f8116a80.png",
     "static/media/Perro.png": "/static/media/Perro.890e1d81d6b183925ebf.png",
     "static/media/Van.png": "/static/media/Van.83ea7b16bfc857ebbb9d.png",
     "static/media/BunnyDogCat.png": "/static/media/BunnyDogCat.3614746061e6e200d54f.png",
+    "static/media/FoodMagenta.png": "/static/media/FoodMagenta.713046c2e0b166c844d9.png",
+    "static/media/CatBagMagenta.png": "/static/media/CatBagMagenta.16e4fb225b66c2719939.png",
+    "static/media/ShinnyMedMagenta.png": "/static/media/ShinnyMedMagenta.4a15bb62897b8257c9e1.png",
     "static/media/Logo.svg": "/static/media/Logo.41a0cd34ec29892d7e3b005436efc588.svg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.82082eb5.css.map": "/static/css/main.82082eb5.css.map",
-    "main.be810043.js.map": "/static/js/main.be810043.js.map",
+    "main.17be57b6.js.map": "/static/js/main.17be57b6.js.map",
     "787.7eda0f74.chunk.js.map": "/static/js/787.7eda0f74.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82082eb5.css",
-    "static/js/main.be810043.js"
+    "static/js/main.17be57b6.js"
   ]
 }
