@@ -16,17 +16,24 @@ export default function Bubble({ title, image, paragraph }) {
   }, []);
   return (
     <div
-      className={`bg-whiteish mx-auto  rounded-md text-blackish flex flex-col items-center p-[20px] p-[20px] ${
+      className={`relative bg-whiteish mx-auto  rounded-md text-blackish flex flex-col items-center p-[20px] p-[20px]  ${
         full && "px-[100px]"
       } sm:flex-row items-center lg:rounded-2xl sm:h-[323px] lg:h-[464px]  space-y-[20px] lg:space-y-[28.84px]`}
     >
+      <div
+        className=" absolute top-[-60%] sm:top-[-115%] md:top-[-110%] md:top-[-85%] lg:top-[-85%] sm:left-[-75%] md:left-[-45%] lg:left-[-50%]  -z-10  h-[1100px] w-[1100px]  lg:h-[1200px] sm:w-[1200px] lg:h-[1700px] lg:w-[1700px]"
+        style={{
+          background:
+            "radial-gradient(#E01BA5, rgba(255,237,250,0.0), rgba(255,237,250,0))",
+        }}
+      ></div>
       <div className="  flex  justify-center h-[250px] w-full lg:h-[464px]  sm:flex-1 sm:border-none   border-b border-inactive">
         <img
           src={image}
           alt=""
           className={`overflow-visible sm:translate-x-[-40px] lg:translate-x-[-50px] ${
             full && `lg:translate-x-[-70px]`
-          } translate-y-[-50px] sm:translate-y-[-113px] lg:translate-y-[-160px]  h-[300px]  sm:h-[400px] lg:h-[624px] object-cover  `}
+          } translate-y-[-50px] sm:translate-y-[-123px] lg:translate-y-[-174px]  h-[300px]  sm:h-[400px] lg:h-[624px] object-cover  `}
         />
       </div>
       <div className=" sm:min-w-[100px] space-y-[20px] lg:space-y-[28.84px]  sm:flex-1 sm:ml-[20px]  lg:ml-[30px]">

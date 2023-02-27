@@ -27,9 +27,9 @@ export default function Body() {
     return () => mediaQuery.removeListener(listener);
   }, []);
   return (
-    <div className="bg-blackish lg:flex lg:items-center lg:justify-center w-full  overflow-hidden">
-      <div className=" p-[20px] pb-[0px] pt-[40px] lg:pt-[81px] space-y-[40px] lg:space-y-[81px] lg:w-[1240px]">
-        <div className="grid grid-cols-2  sm:grid-cols-4 gap-[20px]  ">
+    <div className="bg-blackish lg:flex lg:items-center lg:justify-center w-full z-0 overflow-hidden relative">
+      <div className=" p-[20px] pb-[0px] pt-[40px] lg:pt-[81px] space-y-[40px] lg:space-y-[81px]  lg:w-[1240px]">
+        <div className="grid grid-cols-2 z-50 sm:grid-cols-4 gap-[20px]  ">
           <Card
             titulo="Medicina"
             logo={<FaPlusCircle />}
@@ -142,7 +142,14 @@ export default function Body() {
         <hr className="text-magenta" />
         <Outro />
         <hr className="text-magenta" />
-        <div className="flex justify-center w-full ">
+        <div className="flex justify-center w-full relative ">
+          <div
+            className=" absolute  bottom-[-500px]  sm:bottom-[-900px]  mx-auto -z-10  h-[1000px] w-[1000px] sm:h-[1500px] sm:w-[1500px] md:h-[1600px] md:w-[1600px] lg:h-[1800px] md:w-[1800px]"
+            style={{
+              background:
+                "radial-gradient(#E01BA5, rgba(255,237,250,0.0), rgba(255,237,250,0))",
+            }}
+          ></div>
           <div className=" flex items-end w-full lg:w-[1015px]">
             <img
               className="w-full mt-[-8.8%] ml-[-1.4%]  object-bottom"
