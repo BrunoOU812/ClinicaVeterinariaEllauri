@@ -3,7 +3,7 @@ import { FaPhone } from "react-icons/fa";
 import Buttonize from "./Buttonize";
 import Demo from "../images/Demo.png";
 
-export default function Gallery({ title, image, paragraph }) {
+export default function Gallery({ id, title, image, paragraph }) {
   const [full, setFull] = React.useState(
     window.matchMedia("(min-width:1024px)").matches
   );
@@ -16,7 +16,10 @@ export default function Gallery({ title, image, paragraph }) {
     return () => mediaQuery.removeListener(listener);
   }, []);
   return (
-    <div className=" text-whiteish px-[20px] flex flex-col justify-between space-y-[40px]">
+    <div
+      id={id}
+      className=" text-whiteish px-[20px] flex flex-col justify-between space-y-[40px]"
+    >
       <h2 className="font-serif text-[30px] text-left lg:text-[46px]">
         {title}
       </h2>

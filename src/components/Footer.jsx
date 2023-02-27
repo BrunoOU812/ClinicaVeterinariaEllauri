@@ -19,7 +19,7 @@ export default function Footer() {
     return () => mediaQuery.removeListener(listener);
   }, []);
   return (
-    <div className="bg-whiteish w-full text-magenta text-left space-y-[20px] p-[20px] flex flex-col items-center">
+    <div className="bg-whiteish w-full text-magenta text-left space-y-[20px] p-[20px] pt-[20px] md:pt-[40px] flex flex-col items-center  border-t-[2.35px] lg:border-t-[6px]">
       <div className={`px-[20px] flex space-x-[35px] ${full && `w-[1200px]`}`}>
         <div className="flex flex-col flex-1 space-y-[11px] ">
           <h3 className="text-[15px] w-full uppercase">Contacto</h3>
@@ -76,8 +76,12 @@ export default function Footer() {
 
       <div className="flex justify-between w-full">
         <div className="w-[128px]"></div>
-        <div className="w-[100px]">
-          <a className="cursor-pointer " href="https://brunoou812.github.io/">
+        <div className="w-[80px] md:w-[100px]">
+          <a
+            className="cursor-pointer "
+            target="_blank"
+            href="https://brunoou812.github.io/"
+          >
             <img className="w-full " src={BMWD} alt="" />
           </a>
         </div>

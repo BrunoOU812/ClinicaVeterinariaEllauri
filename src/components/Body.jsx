@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import Bubble from "./Bubble";
-import Section from "./Section";
+import Location from "./Location";
 import Outro from "./Outro";
 import Gallery from "./Gallery";
 import { FaPlusCircle, FaBriefcaseMedical, FaBone } from "react-icons/fa";
@@ -73,6 +73,7 @@ export default function Body() {
         </div>
         <hr className="text-magenta" />
         <Bubble
+          id={"consultas"}
           title={`Consultas`}
           image={Veterinarian}
           paragraph={
@@ -89,6 +90,7 @@ export default function Body() {
         />
         <hr className="text-magenta" />
         <Gallery
+          id={"clinica"}
           title={`Nuestra Clínica`}
           image={Van}
           paragraph={
@@ -110,6 +112,7 @@ export default function Body() {
         />
         <hr className="text-magenta" />
         <Bubble
+          id={"traslados"}
           title={`Traslados`}
           image={Van}
           paragraph={
@@ -125,7 +128,8 @@ export default function Body() {
           }
         />
         <hr className="text-magenta" />
-        <Section
+        <Location
+          id={"location"}
           title={`Nuestra Ubicación`}
           image={Van}
           paragraph={

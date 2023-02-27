@@ -12,16 +12,22 @@ export default function Hero() {
       setFull(mediaQuery.matches);
     };
     mediaQuery.addListener(listener);
-    console.log("esto es full ", full);
     return () => mediaQuery.removeListener(listener);
   }, []);
   return (
-    <div className=" overflow-hidden flex justify-center bg-pinkwhite w-full h-[330px] sm:h-[360px-50px] md:h-[360px] lg:h-[798px] border-b border-b-magenta border-b-[2.35px] lg:border-b-[6px]">
+    <div
+      id="hero"
+      className=" overflow-hidden flex justify-center bg-pinkwhite w-full h-[330px] sm:h-[360px-50px] md:h-[360px] lg:h-[798px] border-b border-b-magenta border-b-[2.35px] lg:border-b-[6px]"
+    >
       <div className="w-full md:w-[1200px] space-x-[20px] flex justify-between relative items-center mx-[20px] md:mx-[30px]">
         <div className="z-20  flex flex-col w-[220px] sm:w-[300px] md:w-[420px] lg:w-[553px]  text-blackish space-y-[14px] md:space-y-[15px]  lg:space-y-[35px]  items-start">
-          <span className="flex items-center semi text-magenta text-[13px] sm:text-[14px] lg:text-[20px] ">
+          <a
+            target="_blank"
+            href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+Ellauri/@-34.9071711,-56.1493833,15z/data=!4m6!3m5!1s0x959f810e747dbfdd:0xeb0e827479fb8414!8m2!3d-34.9071711!4d-56.1493833!16s%2Fg%2F11b6gnssqk"
+            className="flex items-center semi text-magenta text-[13px] sm:text-[14px] lg:text-[20px] "
+          >
             <MdLocationOn /> José Ellauri 1328
-          </span>
+          </a>
           <h1 className="text-left font-serif text-[18px] sm:text-[20px] md:text-[27px] lg:text-[46px] ">
             Ofrecemos servicios de alta calidad para garantizar la salud y
             felicidad de su mascota.
