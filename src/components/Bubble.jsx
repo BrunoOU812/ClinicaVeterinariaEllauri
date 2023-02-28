@@ -41,9 +41,9 @@ export default function Bubble({ id, title, image, paragraph }) {
         <h2 className="font-serif text-[30px] text-left lg:text-[46px]">
           {title}
         </h2>
-        <p className="text-[13px] text-left md:text-[14px] lg:text-[18px]">
+        <div className="text-[13px] text-left md:text-[14px] lg:text-[18px]">
           {paragraph}
-        </p>
+        </div>
         <div className="flex justify-between lg:w-[410px] pb-[20px]">
           <div className="flex items-center text-[13px] sm:text-[12px] md:text-[13px] sm:w-[170px] md:w-[210px] lg:text-[18px]">
             <FaPhone /> &nbsp; (+598) 92 775 960
