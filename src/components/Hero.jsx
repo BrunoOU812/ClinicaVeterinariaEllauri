@@ -114,7 +114,7 @@ export default function Hero() {
             <img
               src={Perro}
               alt=""
-              className={` z-10 absolute md:top-[-30px]  object-cover h-[360px] sm:h-[440px] md:h-[660px] lg:h-[950px]`}
+              className={` z-10 absolute md:top-[-30px] overflow-visible object-cover h-[360px] sm:h-[440px] md:h-[660px] lg:h-[950px]`}
             />
           </motion.div>
         </div>
