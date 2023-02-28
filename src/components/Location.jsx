@@ -50,7 +50,14 @@ export default function Location({ id, title, image, paragraph }) {
             </div>
           </div>
           <div className="flex-1 bg-whiteish rounded-xl lg:h-[415px] overflow-hidden flex item-center justify-center">
-            <img src={Demo} alt="" className=" object-cover w-full h-full" />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.946402283568!2d-56.1493833!3d-34.9071711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f810e747dbfdd%3A0xeb0e827479fb8414!2sCl%C3%ADnica%20Veterinaria%20Ellauri!5e0!3m2!1sen!2suy!4v1646057767594!5m2!1sen!2suy"
+              width="100%"
+              height="100%"
+              title="Map"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       )}

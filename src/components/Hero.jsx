@@ -83,7 +83,12 @@ export default function Hero() {
             </div>
           </motion.div>
         </div>
-        <div className="relative  flex flex-1 h-full  ">
+        <div
+          className="relative  flex flex-1 h-full overflow-visible "
+          style={{
+            overflow: "visible",
+          }}
+        >
           <motion.div
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

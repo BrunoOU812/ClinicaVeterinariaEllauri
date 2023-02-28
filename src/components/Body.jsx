@@ -223,6 +223,21 @@ export default function Body() {
         </motion.div>
         <hr className="text-magenta" />
         <div className="flex justify-center w-full relative ">
+          {/* <motion.div
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeInOut", duration: 0.5 }}
+            initial={{ opacity: 0, y: 50 }}
+            exit={{ opacity: 0, y: -50 }}
+          > */}
+          <div
+            className=" absolute  bottom-[-500px]  sm:bottom-[-900px]  mx-auto -z-10  h-[1000px] w-[1000px] sm:h-[1500px] sm:w-[1500px] md:h-[1600px] md:w-[1600px] lg:h-[1800px] md:w-[1800px]"
+            style={{
+              background:
+                "radial-gradient(#E01BA5, rgba(255,237,250,0.0), rgba(255,237,250,0))",
+            }}
+          ></div>
+          {/* </motion.div> */}
           <motion.div
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -230,13 +245,6 @@ export default function Body() {
             initial={{ opacity: 0, y: 50 }}
             exit={{ opacity: 0, y: -50 }}
           >
-            <div
-              className=" absolute  bottom-[-500px]  sm:bottom-[-900px]  mx-auto -z-10  h-[1000px] w-[1000px] sm:h-[1500px] sm:w-[1500px] md:h-[1600px] md:w-[1600px] lg:h-[1800px] md:w-[1800px]"
-              style={{
-                background:
-                  "radial-gradient(#E01BA5, rgba(255,237,250,0.0), rgba(255,237,250,0))",
-              }}
-            ></div>
             <div className=" flex items-end w-full lg:w-[1015px]">
               <img
                 className="w-full mt-[-8.8%] ml-[-1.4%]  object-bottom"
