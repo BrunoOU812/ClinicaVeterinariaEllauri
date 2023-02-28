@@ -10,7 +10,16 @@ export default function Footer() {
   const [full, setFull] = React.useState(
     window.matchMedia("(min-width:1200px)").matches
   );
+  const [isMobile, setIsMobile] = React.useState();
+  function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+  }
+
   React.useEffect(() => {
+    isMobileDevice();
+    setIsMobile(isMobileDevice());
     const mediaQuery = window.matchMedia("(min-width:1200px)");
     const listener = () => {
       setFull(mediaQuery.matches);
@@ -28,16 +37,35 @@ export default function Footer() {
             <span className="font-semibold"> clinicavetellauri@gmail.com </span>{" "}
             o puedes contactarnos a travéz de los siguientes vínculos
           </p>
-          <div className="flex space-x-[6.79px] text-white text-[17px]">
-            <div className="flex items-center justify-center rounded-full w-[25px] h-[25px] bg-magenta">
+          <div className="cursor-pointer flex space-x-[6.79px] text-white text-[17px]">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+Ellauri/@-34.9071711,-56.1493833,15z/data=!4m6!3m5!1s0x959f810e747dbfdd:0xeb0e827479fb8414!8m2!3d-34.9071711!4d-56.1493833!16s%2Fg%2F11b6gnssqk"
+              className="flex items-center justify-center rounded-full w-[25px] h-[25px] bg-magenta"
+            >
               <BsGoogle />
-            </div>
-            <div className="flex items-center justify-center rounded-full w-[25px] h-[25px] bg-magenta">
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.instagram.com/clinica_veterinaria_ellauri/"
+              className="cursor-pointer flex items-center justify-center rounded-full w-[25px] h-[25px] bg-magenta"
+            >
               <AiFillInstagram />
-            </div>
-            <div className="flex items-center justify-center rounded-full w-[25px] h-[25px] bg-magenta">
+            </a>
+            <a
+              rel="noreferrer"
+              href={
+                isMobile
+                  ? "https://wa.me/59892775960"
+                  : "https://web.whatsapp.com/send?phone=+59892775960"
+              }
+              target="_blank"
+              className="cursor-pointer flex items-center justify-center rounded-full w-[25px] h-[25px] bg-magenta"
+            >
               <RiWhatsappFill />
-            </div>
+            </a>
           </div>
         </div>
         <div className="flex flex-col flex-1 space-y-[11px] ">
@@ -78,6 +106,7 @@ export default function Footer() {
         <div className="w-[128px]"></div>
         <div className="w-[80px] md:w-[100px]">
           <a
+            rel="noreferrer"
             className="cursor-pointer "
             target="_blank"
             href="https://brunoou812.github.io/"

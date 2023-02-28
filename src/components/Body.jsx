@@ -16,11 +16,21 @@ import Van from "../images/Van.png";
 import { motion, useScroll } from "framer-motion";
 
 export default function Body() {
+  // const [isMobile, setIsMobile] = React.useState();
+  // function isMobileDevice() {
+  //   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+  //     navigator.userAgent
+  //   );
+  // }
+
   const [full, setFull] = React.useState(
     window.matchMedia("(min-width:1200px)").matches
   );
-
+  // let is;
   React.useEffect(() => {
+    // isMobileDevice();
+    // setIsMobile(isMobileDevice());
+
     const mediaQuery = window.matchMedia("(min-width:1200px)");
     const listener = () => {
       setFull(mediaQuery.matches);
@@ -28,7 +38,12 @@ export default function Body() {
     mediaQuery.addListener(listener);
     return () => mediaQuery.removeListener(listener);
   }, []);
-
+  // if (isMobile) {
+  //   is = "mobile";
+  // } else {
+  //   is = "web";
+  // }
+  // console.log(isMobile, isMobileDevice());
   return (
     <div className="bg-blackish lg:flex lg:items-center lg:justify-center w-full z-0 overflow-hidden relative">
       <div className=" p-[20px] pb-[0px] pt-[40px] lg:pt-[81px] space-y-[40px] lg:space-y-[81px]  lg:w-[1240px]">
@@ -106,6 +121,7 @@ export default function Body() {
             />
           </motion.div>
         </div>
+        {/* <h1 className="text-white">{is}</h1> */}
         <hr className="text-magenta" />
         <motion.div
           whileInView={{ opacity: 1, y: 0 }}
