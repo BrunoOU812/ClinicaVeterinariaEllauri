@@ -8,6 +8,9 @@ export default function Gallery({ id, title, image, paragraph }) {
   const [full, setFull] = React.useState(
     window.matchMedia("(min-width:1024px)").matches
   );
+  const [mid, setMid] = React.useState(
+    window.matchMedia("(min-width:640px)").matches
+  );
   const [count, setCount] = React.useState(0);
   const [count2, setCount2] = React.useState(4);
   const [count3, setCount3] = React.useState(7);
@@ -22,13 +25,19 @@ export default function Gallery({ id, title, image, paragraph }) {
       }, 3000);
     }, 8000);
     const mediaQuery = window.matchMedia("(min-width:1024px)");
+    const mediaQueryMid = window.matchMedia("(min-width:640px)");
     const listener = () => {
       setFull(mediaQuery.matches);
     };
+    const listenerMid = () => {
+      setMid(mediaQueryMid.matches);
+    };
 
     mediaQuery.addListener(listener);
+    mediaQueryMid.addListener(listenerMid);
     return () => {
       mediaQuery.removeListener(listener);
+      mediaQueryMid.removeListener(listenerMid);
       clearInterval(interval);
     };
   }, []);
@@ -64,7 +73,7 @@ export default function Gallery({ id, title, image, paragraph }) {
               className=" object-cover w-full hover:scale-110 duration-150 ease-in-out"
             />
           </motion.div>
-          {full && (
+          {mid && (
             <motion.div
               className="flex-1 bg-whiteish rounded-xl h-[250px] overflow-hidden flex item-center justify-center"
               variants={fadeInOutVariant}

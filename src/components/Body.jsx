@@ -154,17 +154,19 @@ export default function Body() {
             title={`Nuestra Clínica`}
             image={images}
             paragraph={
-              <p className=" text-[13px] md:text-[15px] lg:text-[18px] text-left sm:columns-2 lg:columns-3 gap-[20px] space-y-[2rem] ">
+              <p className=" text-[15px] md:text-[15px] lg:text-[18px] text-left sm:columns-2 lg:columns-3 gap-[20px] space-y-[2rem] ">
                 <span className="font-semibold">
                   {" "}
                   Clínica Veterinaria Ellauri{" "}
                 </span>{" "}
                 es un lugar acogedor y moderno, diseñado para brindar la mejor
                 atención a sus pacientes y sus dueños.
+                <br className="lg:hidden" />
                 <br />
                 Contamos con un equipo de veterinarios altamente capacitados y
                 comprometidos a brindar atención personalizada y un servicio
                 excepcional.
+                <br className="lg:hidden" />
                 <br /> Te invitamos a ver nuestras fotos en Instagram para
                 conocer más sobre nuestro local.
               </p>
