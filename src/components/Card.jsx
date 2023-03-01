@@ -17,7 +17,7 @@ export default function Card({ logo, titulo, image, text }) {
             className="w-full hover:scale-110 hover:ease-in-out duration-150"
           />
         </div>
-        <p className="text-[10px] text-left mx-[10px] mt-[8.51px] lg:mx-[24px] lg:mt-[20px] lg:text-[13px]">
+        <p className="text-[13px] text-left mx-[10px] mt-[8.51px] lg:mx-[24px] lg:mt-[20px] lg:text-[13px]">
           {text}
         </p>
       </div>

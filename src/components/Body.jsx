@@ -14,23 +14,22 @@ import CatBagMagenta from "../images/CatBagMagenta.png";
 import BunnyDogCat from "../images/BunnyDogCat.png";
 import Van from "../images/Van.png";
 import { motion, useScroll } from "framer-motion";
+import I1 from "../gallery/I1.png";
+import I2 from "../gallery/I2.png";
+import I3 from "../gallery/I3.png";
+import I4 from "../gallery/I4.png";
+import I5 from "../gallery/I5.png";
+import I6 from "../gallery/I6.png";
+import I7 from "../gallery/I7.png";
+import I8 from "../gallery/I8.png";
+import I9 from "../gallery/I9.png";
 
 export default function Body() {
-  // const [isMobile, setIsMobile] = React.useState();
-  // function isMobileDevice() {
-  //   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-  //     navigator.userAgent
-  //   );
-  // }
-
+  const images = [I1, I2, I3, I4, I5, I6, I7, I8, I9];
   const [full, setFull] = React.useState(
     window.matchMedia("(min-width:1200px)").matches
   );
-  // let is;
   React.useEffect(() => {
-    // isMobileDevice();
-    // setIsMobile(isMobileDevice());
-
     const mediaQuery = window.matchMedia("(min-width:1200px)");
     const listener = () => {
       setFull(mediaQuery.matches);
@@ -38,12 +37,6 @@ export default function Body() {
     mediaQuery.addListener(listener);
     return () => mediaQuery.removeListener(listener);
   }, []);
-  // if (isMobile) {
-  //   is = "mobile";
-  // } else {
-  //   is = "web";
-  // }
-  // console.log(isMobile, isMobileDevice());
   return (
     <div className="bg-blackish lg:flex lg:items-center lg:justify-center w-full z-0 overflow-hidden relative">
       <div className=" p-[20px] pb-[0px] pt-[40px] lg:pt-[81px] space-y-[40px] lg:space-y-[81px]  lg:w-[1240px]">
@@ -159,7 +152,7 @@ export default function Body() {
           <Gallery
             id={"clinica"}
             title={`Nuestra Clínica`}
-            image={Van}
+            image={images}
             paragraph={
               <p className=" text-[13px] md:text-[15px] lg:text-[18px] text-left sm:columns-2 lg:columns-3 gap-[20px] space-y-[2rem] ">
                 <span className="font-semibold">

@@ -61,9 +61,10 @@ export default function Dropdown() {
           <li
             className={`${liStyle} text-magenta flex items-center space-x-[8px] pt-3 border-none`}
           >
-            {" "}
-            <FaPhone className="h-[20px] bg-red-100" />{" "}
-            <span>(+598) 92 775 960</span>
+            <a href="tel:+59892775960" className="flex space-x-[8px]">
+              <FaPhone className="h-[20px] bg-red-100" />{" "}
+              <span>(+598) 92 775 960</span>
+            </a>
           </li>
         </ul>
       </DropdownMenuContent>

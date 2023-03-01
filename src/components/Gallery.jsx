@@ -7,13 +7,25 @@ export default function Gallery({ id, title, image, paragraph }) {
   const [full, setFull] = React.useState(
     window.matchMedia("(min-width:1024px)").matches
   );
+  const [count, setCount] = React.useState(0);
+  const [count2, setCount2] = React.useState(4);
+  const [count3, setCount3] = React.useState(7);
   React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCount((prevState) => (prevState + 1) % image.length);
+      setCount2((prevState) => (prevState + 1) % image.length);
+      setCount3((prevState) => (prevState + 1) % image.length);
+    }, 5000);
     const mediaQuery = window.matchMedia("(min-width:1024px)");
     const listener = () => {
       setFull(mediaQuery.matches);
     };
+
     mediaQuery.addListener(listener);
-    return () => mediaQuery.removeListener(listener);
+    return () => {
+      mediaQuery.removeListener(listener);
+      clearInterval(interval);
+    };
   }, []);
   return (
     <div
@@ -27,7 +39,7 @@ export default function Gallery({ id, title, image, paragraph }) {
         <div className="w-full flex justify-between space-x-[20px]">
           <div className="flex-1 bg-whiteish rounded-xl  h-[250px] overflow-hidden flex item-center justify-center">
             <img
-              src={Demo}
+              src={image[count]}
               alt=""
               className=" object-cover w-full hover:scale-110 duration-150 ease-in-out"
             />
@@ -35,7 +47,7 @@ export default function Gallery({ id, title, image, paragraph }) {
           {full && (
             <div className="flex-1 bg-whiteish rounded-xl  h-[250px] overflow-hidden flex item-center justify-center">
               <img
-                src={Demo}
+                src={image[count2]}
                 alt=""
                 className=" object-cover w-full  hover:scale-110 duration-150 ease-in-out"
               />
@@ -44,7 +56,7 @@ export default function Gallery({ id, title, image, paragraph }) {
           {full && (
             <div className="flex-1 bg-whiteish rounded-xl  h-[250px] overflow-hidden flex item-center justify-center">
               <img
-                src={Demo}
+                src={image[count3]}
                 alt=""
                 className=" object-cover w-full  hover:scale-110 duration-150 ease-in-out"
               />

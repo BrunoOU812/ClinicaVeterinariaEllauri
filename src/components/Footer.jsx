@@ -28,14 +28,19 @@ export default function Footer() {
     return () => mediaQuery.removeListener(listener);
   }, []);
   return (
-    <div className="bg-whiteish w-full text-magenta text-left space-y-[20px] p-[20px] pt-[20px] md:pt-[40px] flex flex-col items-center  border-t-[2.35px] lg:border-t-[6px]">
+    <div className="bg-whiteish w-full text-magenta text-left space-y-[20px] sm:p-[10px] pt-[20px] md:pt-[40px] flex flex-col items-center  border-t-[2.35px] lg:border-t-[6px]">
       <div className={`px-[20px] flex space-x-[35px] ${full && `w-[1200px]`}`}>
         <div className="flex flex-col flex-1 space-y-[11px] ">
-          <h3 className="text-[15px] w-full uppercase">Contacto</h3>
+          <h3 className="text-[13px] sm:text-[15px] w-full uppercase">
+            Contacto
+          </h3>
           <p className="text-[13px] w-full">
-            Envíanos un mail a{" "}
-            <span className="font-semibold"> clinicavetellauri@gmail.com </span>{" "}
-            o puedes contactarnos a travéz de los siguientes vínculos
+            Envíanos un mail a <span className="font-semibold">clinica</span>{" "}
+            <span className="font-semibold">veterinaria</span>
+            <span className="font-semibold">ellauri </span>
+            <span className="font-semibold"> @ </span>
+            <span className="font-semibold"> gmail.com </span> o puedes
+            contactarnos a travéz de los siguientes vínculos
           </p>
           <div className="cursor-pointer flex space-x-[6.79px] text-white text-[17px]">
             <a
@@ -69,7 +74,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col flex-1 space-y-[11px] ">
-          <h3 className="text-[15px] w-full uppercase">Telefono</h3>
+          <h3 className="text-[13px] sm:text-[15px] w-full uppercase">
+            Telefono
+          </h3>
           <p className="text-[13px] w-full">
             {" "}
             Por favor, no dude en{" "}
@@ -79,12 +86,18 @@ export default function Footer() {
             </span>
             pregunta o para programar una cita.
           </p>
-          <div className="flex items-center text-[13px] sm:text-[12px] md:text-[13px] sm:w-[170px] md:w-[210px] lg:text-[13px]">
+          <a
+            href="tel:27067153"
+            className="flex items-center text-[13px] sm:text-[12px] md:text-[13px] sm:w-[170px] md:w-[210px] lg:text-[13px]"
+          >
             <FaPhone /> &nbsp; 2706 7153
-          </div>
-          <div className="flex items-center text-[13px] sm:text-[12px] md:text-[13px] sm:w-[170px] md:w-[210px] lg:text-[13px]">
+          </a>
+          <a
+            href="tel:+59892775960"
+            className="flex items-center text-[13px] sm:text-[12px] md:text-[13px] sm:w-[170px] md:w-[210px] lg:text-[13px]"
+          >
             <FaPhone /> &nbsp; (+598) 92 775 960
-          </div>
+          </a>
         </div>
         {full && (
           <div className="flex flex-col flex-1 space-y-[11px] ">
@@ -116,6 +129,7 @@ export default function Footer() {
         </div>
         <div className="w-[128px]"></div>
       </div>
+      <hr className="text-whiteish w-full" />
     </div>
   );
 }

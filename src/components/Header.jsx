@@ -15,9 +15,6 @@ export default function Header() {
     mediaQuery.addListener(listener);
     return () => mediaQuery.removeListener(listener);
   }, []);
-  const handleClick = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <header className="z-[100] py-[20px] bg-white w-full text-magenta border-b-[2.35px] lg:border-b-[6px]  h-[41.35px] lg:h-[100px] flex items-center justify-center fixed">
@@ -82,8 +79,10 @@ export default function Header() {
             </li>
             <li className="text-magenta flex items-center space-x-[8px]">
               {" "}
-              <FaPhone className="h-[20px] bg-red-100" />{" "}
-              <span>(+598) 92 775 960</span>
+              <a href="tel:+59892775960" className="flex space-x-[8px]">
+                <FaPhone className="h-[20px] bg-red-100" />{" "}
+                <span>(+598) 92 775 960</span>
+              </a>
             </li>
           </ul>
         ) : (
