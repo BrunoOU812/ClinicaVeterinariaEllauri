@@ -45,9 +45,13 @@ export default function Bubble({ id, title, image, paragraph }) {
           {paragraph}
         </div>
         <div className="flex justify-between lg:w-[410px] pb-[20px]">
-          <div className="flex items-center text-[13px] sm:text-[12px] md:text-[13px] sm:w-[170px] md:w-[210px] lg:text-[18px]">
+          <a
+            href="tel:+59892775960"
+            className=" cursor-pointer flex items-center text-[13px] sm:text-[12px] md:text-[13px] sm:w-[170px] md:w-[210px] lg:text-[18px]"
+          >
             <FaPhone /> &nbsp; (+598) 92 775 960
-          </div>
+          </a>
+
           <Buttonize />
         </div>
       </div>
