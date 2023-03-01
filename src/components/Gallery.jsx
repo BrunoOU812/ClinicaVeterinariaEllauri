@@ -3,7 +3,6 @@ import { FaPhone } from "react-icons/fa";
 import Buttonize from "./Buttonize";
 import { motion } from "framer-motion";
 import Demo from "../images/Demo.png";
-import { AiOutlineInstagram } from "react-icons/ai";
 
 export default function Gallery({ id, title, image, paragraph }) {
   const [full, setFull] = React.useState(
@@ -57,93 +56,60 @@ export default function Gallery({ id, title, image, paragraph }) {
       </h2>
       <div className="space-y-[20px]">
         <div className="w-full flex justify-between space-x-[20px]">
-          <div className="flex-1 rounded-xl h-[250px] overflow-hidden flex item-center justify-center relative">
-            <div className="hover:scale-110 duration-200 ease-in-out w-full h-full">
-              <a
-                href="https://www.instagram.com/clinica_veterinaria_ellauri/"
-                target="blank"
-                className="z-20 opacity-0 hover:opacity-100 flex items-center justify-center cursor-pointer w-full h-full absolute hover:bg-[rgba(42,53,53,0.5)] duration-200 ease-in-out"
-              >
-                <AiOutlineInstagram className="text-white text-[80px] opacity-30" />
-              </a>
-              <motion.div
-                className="w-full h-full flex item-center justify-center relative z-10"
-                variants={fadeInOutVariant}
-                initial="initial"
-                animate={{
-                  opacity: [0, 1, 1, 0],
-                  transition: { duration: 8, times: [0, 0.2, 0.8, 1] },
-                }}
-                exit="exit"
-                key={count}
-              >
-                <img
-                  src={image[count]}
-                  alt=""
-                  className=" object-cover w-full  duration-150 ease-in-out"
-                />
-              </motion.div>
-            </div>
-          </div>
+          <motion.div
+            className="flex-1 bg-whiteish rounded-xl h-[250px] overflow-hidden flex item-center justify-center"
+            variants={fadeInOutVariant}
+            initial="initial"
+            animate={{
+              opacity: [0, 1, 1, 0],
+              transition: { duration: 8, times: [0, 0.2, 0.8, 1] },
+            }}
+            exit="exit"
+            key={count}
+          >
+            <img
+              src={image[count]}
+              alt=""
+              className=" object-cover w-full hover:scale-110 duration-150 ease-in-out"
+            />
+          </motion.div>
           {mid && (
-            <div className="flex-1 rounded-xl h-[250px] overflow-hidden flex item-center justify-center relative">
-              <div className="hover:scale-110 duration-200 ease-in-out w-full h-full">
-                <a
-                  href="https://www.instagram.com/clinica_veterinaria_ellauri/"
-                  target="blank"
-                  className="z-20 opacity-0 hover:opacity-100 flex items-center justify-center cursor-pointer w-full h-full absolute hover:bg-[rgba(42,53,53,0.5)] duration-200 ease-in-out"
-                >
-                  <AiOutlineInstagram className="text-white text-[80px]  opacity-30" />
-                </a>
-                <motion.div
-                  className="w-full h-full flex item-center justify-center relative z-10"
-                  variants={fadeInOutVariant}
-                  initial="initial"
-                  animate={{
-                    opacity: [0, 1, 1, 0],
-                    transition: { duration: 8, times: [0, 0.2, 0.8, 1] },
-                  }}
-                  exit="exit"
-                  key={count}
-                >
-                  <img
-                    src={image[count2]}
-                    alt=""
-                    className=" object-cover w-full  duration-150 ease-in-out w-full h-full"
-                  />
-                </motion.div>
-              </div>
-            </div>
+            <motion.div
+              className="flex-1 bg-whiteish rounded-xl h-[250px] overflow-hidden flex item-center justify-center"
+              variants={fadeInOutVariant}
+              initial="initial"
+              animate={{
+                opacity: [0, 1, 1, 0],
+                transition: { duration: 8, times: [0, 0.2, 0.8, 1] },
+              }}
+              exit="exit"
+              key={count2}
+            >
+              <img
+                src={image[count2]}
+                alt=""
+                className=" object-cover w-full  hover:scale-110 duration-150 ease-in-out"
+              />
+            </motion.div>
           )}
           {full && (
-            <div className="flex-1 rounded-xl h-[250px] overflow-hidden flex item-center justify-center relative">
-              <div className="hover:scale-110 duration-200 ease-in-out">
-                <a
-                  href="https://www.instagram.com/clinica_veterinaria_ellauri/"
-                  target="blank"
-                  className="z-20 opacity-0 hover:opacity-100 flex items-center justify-center cursor-pointer w-full h-full absolute hover:bg-[rgba(42,53,53,0.5)] duration-200 ease-in-out"
-                >
-                  <AiOutlineInstagram className="text-white text-[80px]  opacity-30" />
-                </a>
-                <motion.div
-                  className="w-full h-full flex item-center justify-center relative z-10"
-                  variants={fadeInOutVariant}
-                  initial="initial"
-                  animate={{
-                    opacity: [0, 1, 1, 0],
-                    transition: { duration: 8, times: [0, 0.2, 0.8, 1] },
-                  }}
-                  exit="exit"
-                  key={count}
-                >
-                  <img
-                    src={image[count3]}
-                    alt=""
-                    className=" object-cover w-full  duration-150 ease-in-out"
-                  />
-                </motion.div>
-              </div>
-            </div>
+            <motion.div
+              className="flex-1 bg-whiteish rounded-xl h-[250px] overflow-hidden flex item-center justify-center"
+              variants={fadeInOutVariant}
+              initial="initial"
+              animate={{
+                opacity: [0, 1, 1, 0],
+                transition: { duration: 8, times: [0, 0.2, 0.8, 1] },
+              }}
+              exit="exit"
+              key={count3}
+            >
+              <img
+                src={image[count3]}
+                alt=""
+                className=" object-cover w-full  hover:scale-110 duration-150 ease-in-out"
+              />
+            </motion.div>
           )}
         </div>
         {paragraph}
