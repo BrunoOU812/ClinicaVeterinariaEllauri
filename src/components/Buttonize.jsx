@@ -46,8 +46,8 @@ export default function Buttonize({ button, fill, text }) {
       rel="noreferrer"
       href={
         isMobile
-          ? "https://wa.me/59892775960"
-          : "https://web.whatsapp.com/send?phone=+59892775960"
+          ? "https://wa.me/59892775960?text=Hola,%20quiero%20hacer%20una%20consulta"
+          : "https://web.whatsapp.com/send?phone=+59892775960&text=Hola%2C%20quiero%20hacer%20una%20consulta"
       }
       target="_blank"
       className={`${style} border-whatsapp  bg-whatsapp text-white text-[13px] sm:text-[14.53px] md:text-[16px] lg:text-[17.53px] `}
