@@ -105,9 +105,7 @@ export default function Hero() {
             ></div>
           </motion.div>
           <motion.div
-            style={{
-              overflow: "visible",
-            }}
+            className={`z-10 absolute left-[-100px] sm:left-[-50px] md:left-[-40px] lg:left-[40px] md:top-[-30px] overflow-visible object-cover w-[360px] sm:w-[440px] md:h-[660px] lg:h-[950px]`}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ ease: "easeInOut", duration: 0.5, delay: 0.8 }}
@@ -115,12 +113,9 @@ export default function Hero() {
             exit={{ opacity: 0 }}
           >
             <img
-              style={{
-                overflow: "visible",
-              }}
               src={Perro}
               alt=""
-              className={` z-10 absolute md:top-[-30px] overflow-visible object-cover h-[360px] sm:h-[440px] md:h-[660px] lg:h-[950px]`}
+              className={` md:top-[-30px] overflow-visible object-cover h-[360px] sm:h-[440px] md:h-[660px] lg:h-[950px]`}
             />
           </motion.div>
         </div>
